@@ -1,0 +1,892 @@
+/*---GENERAL---*/
+
+
+/*---tipofrafia---*/
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+/*---INICIO---*/
+
+.body {
+  background-color: #F9F9F9;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid  {
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: #F9F9F9;
+  font-size: 25px;
+}
+
+
+/*---banner---*/
+
+/* Contenedor de la imagen */
+.image-container {
+  position: relative;
+  width: 100%; /* Ajusta el tamaño como prefieras */
+  margin: auto; /* Centra horizontalmente el contenedor */
+  overflow: hidden; /* Evita que elementos se salgan del contenedor */
+}
+
+/* Imagen de fondo */
+.image-container img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones */
+  border-radius: 0cqmax 0cqmax 2cqmax 2cqmax ;
+
+}
+
+/* Contenido sobre la imagen */
+.overlay-content {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
+  text-align: center; /* Alinea el texto */
+  color: white; /* Asegúrate de que el texto sea legible */
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: rgba(177, 220, 248, 0.433); /* Fondo semitransparente para mejor visibilidad */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn btn-primary btn-lg{
+  background-color: #87c2e1;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #F9F9F9;
+  font-size: 25px;
+  border: none;
+  text-align: center;
+  margin: 10%,2%;
+  border-radius: 40%;
+}
+
+
+/* Logo */
+.overlay-content .logo {
+  width: 280px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin-bottom: 10px; /* Espacio entre el logo y el texto */
+}
+
+
+/*---SECTION---*/
+
+.variado{
+  background-color: #F9F9F9;
+  padding: 50px;
+  margin: 5% 10%;
+  text-align: center;
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.variado h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*---SECTION video---*/
+/* Estilo general para el section */
+#pich {
+  text-align: center; /* Centra el contenido */
+  padding: 3% 0%; /* Espaciado interno */
+  background-color: #C7E6F2; /* Fondo claro */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Título del section */
+#pich h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Espaciado entre el título y el video */
+  color: #F9F9F9; /* Color del texto */
+}
+
+/* Contenedor del video */
+.video-container {
+  position: relative;
+  padding-bottom: 28.125%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  width: 50%; /* Se adapta al ancho del contenedor */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Video responsivo */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*---SECTION barra interactiva---*/
+/* Estilo general para la sección */
+#emoji-slider {
+  text-align: center;
+  padding: 5% 0% 2% 0%;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#emoji-slider h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la barra deslizante */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Barra deslizante */
+.slider {
+  width: 80%; /* Ajusta el tamaño para pantallas grandes */
+  max-width: 400px;
+  margin: 10px 0;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #87c2e1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Emoji de salida */
+#emojiOutput {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+
+
+
+/*---SECTION PRODUCTOS---*/
+/* Estilo general para la sección */
+#products {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+#products h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px; /* Espaciado entre el título y el video */
+  color: #87c2e1; /* Color del texto */
+  text-align: center;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples líneas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espaciado entre las tarjetas */
+}
+
+/* Tarjetas individuales */
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Ocupa un tercio del ancho del contenedor, menos el espaciado */
+  max-width: 18rem; /* Limita el ancho máximo de las tarjetas */
+  box-shadow: 0 4px 6px rgba(181, 192, 215, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}
+
+
+/*---SECTION APP---*/
+/* Estilo general para la sección */
+#app {
+  padding: 5%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Contenedor para el iframe */
+.iframe-container {
+  position: relative;
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  padding-top: 56.25%; /* Proporción 16:9 (altura/ancho) */
+  margin: 0 auto; /* Centrar el iframe */
+}
+
+/* El iframe responsivo */
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: 100%; /* Ajusta la altura al contenedor */
+  border-radius: 8px; /* Opcional: Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+
+/*---------------------------------------------------*/
+/*---SECTION footer---*/
+
+#contacto {
+  height: 400px;
+  background-color: #87c2e1;
+  background-image: url(/IMAGE/F2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 10%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+a{
+  color: rgb(66, 162, 192);
+}
+
+a:hover{
+  color: rgb(0, 0, 0);
+}
+
+a:active{
+  color: rgb(255, 233, 35);
+}
+
+button{
+  border: none;
+  border-color: transparent;
+  background: transparent;
+}
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---DESCANSAR---*/
+#yotu {
+  text-align: center; /* Centra el contenido */
+  padding: 3% 5%; /* Espaciado interno */
+  background-color: #C7E6F2; /* Fondo claro */
+  flex-wrap: wrap;
+}
+
+/* Título del section */
+#yotu h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Espaciado entre el título y el video */
+  color: #F9F9F9; /* Color del texto */
+}
+@media (max-width: 480px) {
+  .elfsight-app {
+    flex: 1 1 100%; /* 1 columna en pantallas pequeñas */
+  }
+
+  #yotu h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+  }
+}
+#esti {
+  background-color: #ffffff;
+  padding: 50px;
+  margin: 5% 15%;
+  text-align: center;
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#esti h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+#e {
+  background-color: #F9F9F9;
+  padding: 50px;
+  margin: 5% 10%;
+  text-align: center;
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+#e h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Contenedor de las columnas */
+/* Contenedor de las columnas */
+.exercise {
+  display: flex;
+  flex-direction: row; /* Asegura que las columnas estén en línea horizontal */
+  justify-content: space-between; /* Agrega espacio entre las columnas */
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Primera columna (texto) */
+.columna1 {
+  flex: 1 1 60%; /* Ancho relativo al contenedor */
+  text-align: center;
+  padding-right: 20px; /* Espaciado entre texto e imagen */
+}
+
+/* Segunda columna (imagen) */
+.columna2 {
+  flex: 1 1 40%; /* Ancho relativo al contenedor */
+  text-align: center;
+}
+
+/* Imagen responsiva */
+.columna2 img {
+  width: 100%;
+  max-width: 120px; /* Tamaño máximo */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10cqmax;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .exercise {
+    flex-direction: column; /* Cambia a formato vertical */
+    text-align: center;
+  }
+
+  .columna1,
+  .columna2 {
+    flex: 1 1 100%; /* Ocupan el ancho completo */
+    padding: 0;
+  }
+
+  .columna2 img {
+    max-width: 100px; /* Tamaño reducido para pantallas pequeñas */
+    border-radius: 10cqmax;
+  }
+}
+
+/* Contenedor de las columnas */
+/* Contenedor de las columnas */
+.exercise2 {
+  display: flex;
+  flex-direction: row; /* Asegura que las columnas estén en línea horizontal */
+  justify-content: space-between; /* Agrega espacio entre las columnas */
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Primera columna (texto) */
+.columna22 {
+  flex: 1 1 60%; /* Ancho relativo al contenedor */
+  text-align: center;
+  padding-right: 20px; /* Espaciado entre texto e imagen */
+  color: #f9f9f9;
+}
+
+/* Segunda columna (imagen) */
+.columna11 {
+  flex: 1 1 40%; /* Ancho relativo al contenedor */
+  text-align: center;
+  color: #f9f9f9
+}
+
+/* Imagen responsiva */
+.columna11 img {
+  width: 100%;
+  max-width: 120px; /* Tamaño máximo */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10cqmax;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .exercise2 {
+    flex-direction: column; /* Cambia a formato vertical */
+    text-align: center;
+  }
+
+  .columna11,
+  .columna22 {
+    flex: 1 1 100%; /* Ocupan el ancho completo */
+    padding: 0;
+  }
+
+  .columna22 img {
+    max-width: 100px; /* Tamaño reducido para pantallas pequeñas */
+    border-radius: 10cqmax;
+  }
+}
+
+
+
+
+#ig{
+  padding: 5% 0% 5% 0% ;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+
+
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---aprender---*/
+/*---SECTION NOTICIAS---*/
+/* NOTICIAS*/
+#NOTI {
+  padding:0% 0% 5% 0% ;
+  background-color:white; 
+}
+
+#NOTI h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px; /* Espaciado entre el título y el video */
+  color: #87c2e1; /* Color del texto */
+  text-align: center;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples líneas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espaciado entre las tarjetas */
+}
+
+/* Tarjetas individuales */
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Ocupa un tercio del ancho del contenedor, menos el espaciado */
+  max-width: 18rem; /* Limita el ancho máximo de las tarjetas */
+  box-shadow: 0 4px 6px rgba(181, 192, 215, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}
+
+/*----------*/
+/*---SECTION cartillas---*/
+/* CARTILLAAAAS */
+#carti {
+  padding-top: 2%;
+  padding-block: 2%;
+  background-color: #f9f9f9;
+}
+
+#carti h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px; /* Espaciado entre el título y el video */
+  color: #87c2e1; /* Color del texto */
+  text-align: center;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples líneas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espaciado entre las tarjetas */
+}
+
+/* Tarjetas individuales */
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Ocupa un tercio del ancho del contenedor, menos el espaciado */
+  max-width: 18rem; /* Limita el ancho máximo de las tarjetas */
+  box-shadow: 0 4px 6px rgba(181, 192, 215, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}
+
+
+/* sesion redes sociales FACEBOOK*/
+#redes{
+  padding: 5% 0% 5% 0% ;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+/* sesion TOXICA */
+
+#toxico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 2rem;
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#toxico .column {
+  flex: 1 1 48%; /* 2 columnas con un ancho del 48% */
+}
+
+#toxico .column h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.accordion {
+  margin-top: 1rem;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  #toxico .column {
+    flex: 1 1 100%; /* Una columna en dispositivos pequeños */
+  }
+}
+
+/* sesion MENTAL */
+
+#mental {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 2rem;
+  background-color: #c7e6f270; /* Color de fondo */
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#mental .column {
+  flex: 1 1 48%; /* 2 columnas con un ancho del 48% */
+}
+
+#mental .column h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.accordion {
+  margin-top: 1rem;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  #mental .column {
+    flex: 1 1 100%; /* Una columna en dispositivos pequeños */
+  }
+}
+
+/* sesion FISISCA */
+
+#fisica {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 2rem;
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#fisica .column {
+  flex: 1 1 48%; /* 2 columnas con un ancho del 48% */
+}
+
+#fisica .column h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.accordion {
+  margin-top: 1rem;
+
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  #fisica .column {
+    flex: 1 1 100%; /* Una columna en dispositivos pequeños */
+  }
+}
+
+/*--------------------------*/
+/*---SECTION NOSOTROS---*/
+/* NOSOTROOOOOS */
+#nosotros {
+  text-align: center; /* Centra el contenido */
+  padding: 10% 15%; /* Espaciado interno */
+  background-image: url(/IMAGE/r2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* Título del section */
+#nosotros h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Espaciado entre el título y el video */
+  color: #F9F9F9; /* Color del texto */
+  
+}
+
+/* Contenedor del video */
+.video-container {
+  position: relative;
+  padding-bottom: 28.125%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  width: 50%; /* Se adapta al ancho del contenedor */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Video responsivo */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/*---SECTION---*/
+
+.vision{
+  background-color: #C7E6F2;
+  padding: 50px;
+  margin: 2% 18%;
+  text-align: center;
+  border-radius: 2cqmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 8%;
+}
+
+.vision h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* COMPROMISOOOO */
+/* Estilo general del contenedor */
+#compromiso {
+  background-color: white; /* Fondo claro */
+  padding: 6% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* Contenedor interno */
+.compromiso-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Columnas individuales */
+.compromiso-column {
+  flex: 1 1 45%; /* Cada columna ocupa el 45% del ancho y se ajusta */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Imagen */
+.compromiso-image {
+  max-width: 100%; /* Hace que la imagen sea responsiva */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Texto */
+.compromiso-column h1 {
+  font-size: 2rem;
+  color: #87c2e1; /* Color del texto */
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.compromiso-column p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666; /* Texto secundario */
+ padding: 0% 10%;
+}
+
+.gatoi{
+  display: flex;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
